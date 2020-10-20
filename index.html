@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Formulário</title>
+    <link rel="stylesheet" href="CSS/styles.css"/>
+  </head>
+  <body>
+    <section>
+      <div id="formulario">
+        <h1>Formulário</h1>
+        <form>
+          <div class="form" id='campText'>
+            <h3>Informe seu nome</h3>
+            <input id="text" type="text" maxlength="35" placeholder="Nome e Sobrenome"/>
+          </div>
+          
+          <div class="form" id='radioButton'>
+            <h3>Escolha sua classe</h3>
+            <input name="class" type="radio" id="turistica" value="Turística" checked/>
+            <label for="turistica">Turística</label>
+            
+            <input name="class" type="radio" id="executiva" value="Executiva"/>
+            <label for="executiva">Executivo</label>
+            
+            <input name="class" type="radio" id="luxo" value="Luxo"/>
+            <label for="luxo">Luxo</label>
+          </div>
+          
+          <div class="form" id='checkbox'>
+            <h3>Opcionais</h3>
+            <input type="checkbox"/>
+            <label>Seguro</label><br/>
+            <input type="checkbox"/>
+            <label>Bolsa Viagem</label><br/>
+            <input type="checkbox"/>
+            <label>Translado</label><br/>
+            <input type="checkbox" checked/>
+            <label>City tour</label>
+          </div>
+          
+          <div class="form" id='boxSelect'>
+            <h3>Escolha o Destino</h3>
+            <select>
+              <option value="Bonito">Bonito</option>
+              <option value="Fernando de Noronha">Fernando de Noronha</option>
+              <option value="Natal">Natal</option>
+              <option value="Rio de Janeiro">Rio de Janeiro</option>
+              <option value="Gramado">Gramado</option>
+            </select>
+          </div>
+          
+          <div class="form" id="Comments">
+            <h3>Deixe seu comentário!</h3>
+            <textarea id="textUser" rows="10"></textarea><br/>
+            <a onclick="limpar()" name="button" id="limpar">Limpar</a>
+            <a onclick="enviar()" name="button" id="enviar">Enviar</a>
+          </div>
+          
+        </form>
+      </div>
+    </section>
+    
+    <script src='JS/script.js'></script>
+  </body>
+</html>
